@@ -20,7 +20,7 @@ configurations {
 }
 
 docker {
-    name "mycoolapp"
+    name "mycoolapp2"
     dockerfile file('src/docker/Dockerfile')
     copySpec.from(jar).rename(".*","app.jar")
     buildArgs(['JAR_FILE': "app.jar"])
